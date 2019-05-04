@@ -30,6 +30,9 @@ input {
 }
 
 .colorChange {
-  color: hotpink;
-  background-color: hotpink;
+  background: hotpink;
+}
+
+.fontChange {
+  color: #bada55;
 }

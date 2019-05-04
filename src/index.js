@@ -21,4 +21,5 @@ const body = document.querySelector("body");
 button.addEventListener("click", function() {
   console.log("meep!");
   body.classList.toggle("colorChange");
+  button.classList.toggle("fontChange");
 });
