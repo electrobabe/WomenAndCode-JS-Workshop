@@ -6,6 +6,7 @@ document.getElementById("app").innerHTML = `
 <button>click me</button
 `;
 
+// yay! pop ups!
 // alert("lalala");
 
 // let's do some math!
@@ -20,10 +21,43 @@ console.log("fruit: " + fruit);
 const button = document.querySelector("button");
 const body = document.querySelector("body");
 
+const firstInput = document.querySelector(".firstInput");
+const secondInput = document.querySelector(".secondInput");
+
 button.addEventListener("click", function() {
   console.log("meep!");
+
+  // change colors
   body.classList.toggle("colorChange");
   button.classList.toggle("fontChange");
+
+  // get value from input field
+  const input1 = firstInput.value;
+  const input2 = secondInput.value;
+  console.log("firstInput " + input1);
+  console.log("secondInput " + input2);
+
+  const output = input1 + " " + input2;
+  console.log("output " + output);
+});
+
+// some logical operators
+const a = 20;
+const b = 20;
+const c = 10;
+
+if (a <= b && c < a) {
+  console.log("yay!");
+} else {
+  console.log("nope!");
+}
+
+// set value of text field
+
+button.addEventListener("mouseover", function() {
+  console.log("hover!");
+  const input1 = firstInput.value;
+  secondInput.value = input1;
 });
 
 // some logical operators
